@@ -58,8 +58,6 @@ public class PalindromeController {
             Long timeStamp = palindrome.getDateAdded();
 
             if(date.getTime() - timeStamp <= (timePeriod*60*1000)) {
-                System.out.println(date.getTime() - timeStamp);
-                System.out.println("yes");
                 selectedPalindromes.add(palindromeResource);
             }
         }
